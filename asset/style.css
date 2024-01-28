@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+#cover {
+    width: 100%;
+    height: 100vh;
+    background-color: #2e2e2e;
+}
+
+.love{
+    width: 130px;
+}
+
+.b-te {
+    padding-top: 40px;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 90px;
+}
+p{
+    padding-top: 90px;
+    color: rgb(253, 253, 253);
+    font-family: 'Afacad', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Patua One', serif;
+}
+
+.greetings {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.greetings>span {
+    animation: glow 2.5s ease-in-out infinite;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+
+    }
+
+    10%,
+    90% {
+        color: #ffffff00;
+        text-shadow: none;
+    }
+}
+
+.greetings>span:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.greetings>span:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.greetings>span:nth-child(4) {
+    animation-delay: .6s;
+}
+
+.greetings>span:nth-child(5) {
+    animation-delay: .8s;
+}
+.greetings>span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+
+.button {
+    position: relative;
+    background-color: transparent;
+    color: #e8e8e8;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(51, 51, 51, 0.2);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::before {
+    content: "Taraaa";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(135deg,#7b4397,#dc2430 );
+    transform: translate(0%,90%);
+    z-index: 99;
+    position: relative;
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button::after {
+    content: "Klik Disini Cantik";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top;
+    transform: translate(0%,-100%);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    transform: translate(0%,0%);
+  }
+  
+  .button:hover::after {
+    transform: translate(0%,-200%);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active {
+    scale: 0.95;
+  }
+  
+.tombol {
+    padding-top: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+.rt {
+    text-align: center;
+
+}
+
